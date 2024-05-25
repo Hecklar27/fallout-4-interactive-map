@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Components",
+    "\\src\\Components\\App",
+    "\\src\\Components\\MarkerListItem",
+    "\\src\\Components\\MarkerTypePanel",
+    "\\src\\Components\\SettingsPanel"
+  ],
+  "SelectedNode": "\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx",
+  "PreviewInSolutionExplorer": false
+}

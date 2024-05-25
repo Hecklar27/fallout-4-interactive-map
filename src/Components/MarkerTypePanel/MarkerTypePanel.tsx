@@ -20,6 +20,7 @@ import {
     List,
     ListItem,
     Tooltip,
+    Collapse,
 } from '@chakra-ui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
@@ -41,6 +42,11 @@ const MarkerTypePanel = ({
     onTypeClick = undefined,
     onMarkerTitleClick = undefined,
 }: MarkerTypePanelProps): JSX.Element => {
+    const [collapsed, setCollapsed] = React.useState<{ [key: string]: boolean }>({});
+
+    const toggleCollapse = (subTypeId: MarkerSubtype): void => {
+        setCollapsed((prev) => ({ ...prev, [subTypeId]: !prev[subTypeId] }));
+    };
 
     const hasSubTypes = type ? typesThatHaveSubTypes.includes(type) : false;
 
@@ -59,7 +65,7 @@ const MarkerTypePanel = ({
             const subType = subTypes[marker.subType];
 
             if (subType) {
-                // Already a object, just add the new marker to markers.
+                // Already an object, just add the new marker to markers.
                 subType.markers.push(marker);
             } else {
                 // Create object for sub type
@@ -72,9 +78,7 @@ const MarkerTypePanel = ({
     }
 
     const renderMarkerListItem = (marker: MarkerInterface): JSX.Element => {
-
         return (
-
             <MarkerListItem
                 tag={ListItem}
                 key={marker.id}
@@ -83,100 +87,54 @@ const MarkerTypePanel = ({
                 onMarkerTitleClick={onMarkerTitleClick ? onMarkerTitleClick(marker) : undefined}
                 title={marker.title}
             />
-
         );
-
     };
 
     return (
-
-        <section
-            className={classNames([
-                'marker-type-panel',
-                className,
-            ])}
-        >
-
-            <header
-                className={classNames('marker-type-panel__header')}
-            >
-
+        <section className={classNames(['marker-type-panel', className])}>
+            <header className={classNames('marker-type-panel__header')}>
                 <Box
                     // color will be inherited from FontAwesomeIcon
                     color={type ? typeColorMap[type] : undefined}
-                    className={classNames([
-                        'marker-type-panel__icon',
-                    ])}
+                    className={classNames(['marker-type-panel__icon'])}
                 >
-
-                    <FontAwesomeIcon
-                        icon={faMapMarkerAlt}
-                    />
-
+                    <FontAwesomeIcon icon={faMapMarkerAlt} />
                 </Box>
 
-                <Tooltip
-                    label="Only show this marker type"
-                    placement="top"
-                    hasArrow={true}
-                    openDelay={500}
-                >
-
+                <Tooltip label="Only show this marker type" placement="top" hasArrow={true} openDelay={500}>
                     <Button
                         variant="link"
                         colorScheme="blue"
                         className={classNames('marker-type-panel__header-btn')}
                         onClick={onTypeClick}
                     >
-
                         {type ? typeLabelMap[type] : 'Misc'}
-
                     </Button>
-
                 </Tooltip>
-
             </header>
 
-            <List
-                className={classNames('marker-type-panel__list')}
-            >
-
-                {(hasSubTypes) ? Object.values(subTypes).map((subType) => {
-
-                    return (
-
-                        <ListItem
-                            className={classNames('marker-type-panel__sub-type-list-item')}
-                            key={subType.id}
-                        >
-
+            <List className={classNames('marker-type-panel__list')}>
+                {hasSubTypes
+                    ? Object.values(subTypes).map((subType) => (
+                        <ListItem className={classNames('marker-type-panel__sub-type-list-item')} key={subType.id}>
                             <span
                                 className={classNames('marker-type-panel__sub-type-label')}
+                                onClick={(): void => toggleCollapse(subType.id)} // Explicit return type added
+                                style={{ cursor: 'pointer' }}
                             >
-
-                                {/* TODO: Handle other sub types */}
                                 {subTypeSkillBookLabelMap[subType.id]}
-
                             </span>
-
-                            <List>
-
-                                {subType.markers.map((marker) => renderMarkerListItem(marker))}
-
-                            </List>
-
+                            <Collapse in={!collapsed[subType.id]}>
+                                <List>
+                                    {subType.markers.map((marker) => renderMarkerListItem(marker))}
+                                </List>
+                            </Collapse>
                         </ListItem>
-
-                    );
-
-                }) : markers.map((marker) => renderMarkerListItem(marker))}
-
+                    ))
+                    : markers.map((marker) => renderMarkerListItem(marker))}
             </List>
-
         </section>
-
     );
-
 };
 
 export default MarkerTypePanel;

@@ -30,21 +30,25 @@ const typeColorScheme = {
     [typeMap.SkillBook]: 'yellow',
 } as const;
 
-const subTypeSkillBookSubMap = {
+interface SubTypeSkillBookSubMap {
+    [key: string]: string;
+}
+
+const subTypeSkillBookSubMap: SubTypeSkillBookSubMap = {
     ChineseArmySpecialOpsTrainingManual: 'casotm',
-    WastelandSurvivalGuide:              'wsg',
-    BigBookOfScience:                    'bbos',
-    DCJournalOfInternalMedicine:         'dcjoim',
-    DeansElectronics:                    'de',
-    DuckAndCover:                        'dac',
-    GrognakTheBarbarian:                 'gtb',
-    GunsAndBullets:                      'gab',
-    LyingCongressionalStyle:             'lcs',
-    NikolaTeslaAndYou:                   'ntay',
-    PugilismIllustrated:                 'pi',
-    TalesOfAJunktownJerkyVendor:         'toajjv',
-    TumblersToday:                       'tt',
-} as const;
+    WastelandSurvivalGuide: 'wsg',
+    BigBookOfScience: 'bbos',
+    DCJournalOfInternalMedicine: 'dcjoim',
+    DeansElectronics: 'de',
+    DuckAndCover: 'dac',
+    GrognakTheBarbarian: 'gtb',
+    GunsAndBullets: 'gab',
+    LyingCongressionalStyle: 'lcs',
+    NikolaTeslaAndYou: 'ntay',
+    PugilismIllustrated: 'pi',
+    TalesOfAJunktownJerkyVendor: 'toajjv',
+    TumblersToday: 'tt',
+};
 
 export type ChineseArmySpecialOpsTrainingManual = typeof subTypeSkillBookSubMap.ChineseArmySpecialOpsTrainingManual;
 export type WastelandSurvivalGuide              = typeof subTypeSkillBookSubMap.WastelandSurvivalGuide;
