@@ -23,10 +23,12 @@ import {
 } from '@chakra-ui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-regular-svg-icons';
+{/* MARKERINIT */ }
 import {
     selectIsFoundMarkersShown,
     selectSkillBookMarkers,
     selectSnowGlobeMarkers,
+    selectBobbleHeadMarkers,
     toggleShowFoundMarkers,
     filterMarkerType,
     showAllMarkers,
@@ -57,10 +59,10 @@ const SettingsPanel = ({
 }: SettingsPanelProps): JSX.Element => {
 
     const isFoundMarkersShown = useAppSelector(selectIsFoundMarkersShown);
-
+    {/* MARKERINIT */ }
     const skillBookMarkers = useAppSelector(selectSkillBookMarkers);
     const snowGlobeMarkers = useAppSelector(selectSnowGlobeMarkers);
-
+    const bobbleHeadMarkers = useAppSelector(selectBobbleHeadMarkers);
     const dispatch = useAppDispatch();
 
     const handleShowAllClick = (event: React.MouseEvent): void => {
@@ -164,12 +166,10 @@ const SettingsPanel = ({
                 </Stack>
 
             </header>
-
             <div
                 className={classNames('settings-panel__content')}
             >
-
-                {/* TODO: iterate over typeMap values*/}
+                {/* MARKERINIT */}
                 <MarkerTypePanel
                     className="settings-panel__marker-type-panel"
                     type={typeMap.SkillBook}
@@ -185,6 +185,14 @@ const SettingsPanel = ({
                     markers={snowGlobeMarkers}
                     onMarkButtonClick={handleMarkButtonClick}
                     onTypeClick={handleTypeClick(typeMap.SnowGlobe)}
+                    onMarkerTitleClick={onMarkerTitleClick}
+                />
+                <MarkerTypePanel
+                    className="settings-panel__marker-type-panel"
+                    type={typeMap.BobbleHead}
+                    markers={bobbleHeadMarkers}
+                    onMarkButtonClick={handleMarkButtonClick}
+                    onTypeClick={handleTypeClick(typeMap.BobbleHead)}
                     onMarkerTitleClick={onMarkerTitleClick}
                 />
 

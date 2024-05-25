@@ -66,11 +66,7 @@ const MojaveWastelandMarker = ({
                 'mojave-wasteland-marker__icon',
             ])}
         >
-
-            <FontAwesomeIcon
-                icon={faMapMarkerAlt}
-            />
-
+            <FontAwesomeIcon icon={faMapMarkerAlt} />
         </Box>
     );
 
@@ -92,44 +88,19 @@ const MojaveWastelandMarker = ({
     });
 
     return (
-
         <Marker
-            // className={classNames([
-            //     'mojave-wasteland-marker',
-            //     className,
-            // ])}
             position={[lat, lng]}
             opacity={isFound ? 0.5 : 1}
             icon={icon}
-            eventHandlers={{
-                add: onAdd,
-            }}
+            eventHandlers={{ add: onAdd }}
         >
-
             <Popup>
-
-                <Box
-                    // override leaflets font declaration
-                    fontFamily="body"
-                >
-
-                    <Heading
-                        as="h3"
-                        size="lg"
-                        marginBottom="4"
-                    >
-
-                        <Link
-                            href={url}
-                            isExternal={true}
-                        >
-
+                <Box fontFamily="body">
+                    <Heading as="h3" size="lg" marginBottom="4">
+                        <Link href={url} isExternal={true}>
                             {type === typeMap.SkillBook && subType && subTypeSkillBookLabelMap[subType] && `${subTypeSkillBookLabelMap[subType]} - `}
-
                             {title}
-
                         </Link>
-
                     </Heading>
 
                     <Badge
@@ -141,50 +112,31 @@ const MojaveWastelandMarker = ({
                     </Badge>
 
                     {desc && (
-
                         <Text
                             className={classNames('mojave-wasteland-marker__desc')}
-                            dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
+                            dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(desc),
                             }}
                         />
-
                     )}
 
                     {imgSrc && (
-
-                        <Image
-                            src={imgSrc}
-                            alt={title}
-                            marginBottom="4"
-                        />
-
+                        <Image src={imgSrc} alt={title} marginBottom="4" />
                     )}
 
                     <Button
                         onClick={onMarkButtonClick}
                         width="100%"
                         variant="outline"
-                        leftIcon={(
-                            <Checkbox
-                                isChecked={isFound}
-                            />
-                        )}
+                        leftIcon={<Checkbox isChecked={isFound} />}
                         colorScheme="blue"
                     >
-
                         Mark As Found
-
                     </Button>
-
                 </Box>
-
             </Popup>
-
         </Marker>
-
     );
-
 };
 
 export default React.memo(MojaveWastelandMarker);

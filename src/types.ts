@@ -1,33 +1,40 @@
+{/* MARKERINIT */ }
 const typeMap = {
     SnowGlobe: 'snow_globe',
     SkillBook: 'skill_book',
+    BobbleHead: 'bobble_head',
 } as const;
 
 export type SnowGlobe = typeof typeMap.SnowGlobe;
 export type SkillBook = typeof typeMap.SkillBook;
+export type BobbleHead = typeof typeMap.BobbleHead;
 
-export type MarkerType = SnowGlobe | SkillBook;
+export type MarkerType = SnowGlobe | SkillBook | BobbleHead;
 
-export type TypesThatHaveSubTypes = SkillBook;
+export type TypesThatHaveSubTypes = SkillBook | SnowGlobe | BobbleHead;
 
 const typesThatHaveSubTypes: Array<string> = [
     typeMap.SkillBook,
+    typeMap.BobbleHead,
 ];
 
 const typeLabelMap = {
     [typeMap.SnowGlobe]: 'Snow Globe',
     [typeMap.SkillBook]: 'Skill Book',
+    [typeMap.BobbleHead]: 'Bobble Head',
 } as const;
 
 // Charka theme colors.
 const typeColorMap = {
     [typeMap.SnowGlobe]: 'green.500',
     [typeMap.SkillBook]: 'yellow.300',
+    [typeMap.BobbleHead]: 'blue.500',
 } as const;
 
 const typeColorScheme = {
     [typeMap.SnowGlobe]: 'green',
     [typeMap.SkillBook]: 'yellow',
+    [typeMap.BobbleHead]: 'blue',
 } as const;
 
 interface SubTypeSkillBookSubMap {

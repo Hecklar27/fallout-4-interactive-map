@@ -6,8 +6,10 @@
     "\\src\\Components\\App",
     "\\src\\Components\\MarkerListItem",
     "\\src\\Components\\MarkerTypePanel",
-    "\\src\\Components\\SettingsPanel"
+    "\\src\\Components\\MojaveWastelandMap",
+    "\\src\\Components\\SettingsPanel",
+    "\\src\\Data"
   ],
-  "SelectedNode": "\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx",
+  "SelectedNode": "\\src\\types.ts",
   "PreviewInSolutionExplorer": false
 }

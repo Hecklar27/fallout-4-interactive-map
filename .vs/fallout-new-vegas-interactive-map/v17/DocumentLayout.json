@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Data\\markers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Data\\markers.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\.eslintrc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.eslintrc.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Slices\\appSlice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Slices\\appSlice.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\types.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\types.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\SettingsPanel\\SettingsPanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\SettingsPanel\\SettingsPanel.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\App\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\App\\App.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerListItem\\MarkerListItem.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\MarkerListItem\\MarkerListItem.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\MarkerTypePanel\\MarkerTypePanel.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MojaveWastelandMap\\MojaveWastelandMap.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\MojaveWastelandMap\\MojaveWastelandMap.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MojaveWastelandMarker\\MojaveWastelandMarker.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\Components\\MojaveWastelandMarker\\MojaveWastelandMarker.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,38 +62,117 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": ".eslintrc.js",
               "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\.eslintrc.js",
               "RelativeDocumentMoniker": ".eslintrc.js",
               "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\.eslintrc.js",
               "RelativeToolTip": ".eslintrc.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMBAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-05-25T21:38:20.793Z",
+              "WhenOpened": "2024-05-25T22:38:12.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appSlice.ts",
+              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Slices\\appSlice.ts",
+              "RelativeDocumentMoniker": "src\\Slices\\appSlice.ts",
+              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Slices\\appSlice.ts",
+              "RelativeToolTip": "src\\Slices\\appSlice.ts",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAiwD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-05-25T22:28:45.258Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MarkerTypePanel.scss",
-              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.scss",
-              "RelativeDocumentMoniker": "src\\Components\\MarkerTypePanel\\MarkerTypePanel.scss",
-              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.scss",
-              "RelativeToolTip": "src\\Components\\MarkerTypePanel\\MarkerTypePanel.scss",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-05-25T21:27:57.832Z"
+              "Title": "SettingsPanel.tsx",
+              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\SettingsPanel\\SettingsPanel.tsx",
+              "RelativeDocumentMoniker": "src\\Components\\SettingsPanel\\SettingsPanel.tsx",
+              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\SettingsPanel\\SettingsPanel.tsx",
+              "RelativeToolTip": "src\\Components\\SettingsPanel\\SettingsPanel.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEAAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-25T22:14:26.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
+              "Title": "App.tsx",
+              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\App\\App.tsx",
+              "RelativeDocumentMoniker": "src\\Components\\App\\App.tsx",
+              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\App\\App.tsx",
+              "RelativeToolTip": "src\\Components\\App\\App.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-25T22:14:08.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MojaveWastelandMarker.tsx",
+              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MojaveWastelandMarker\\MojaveWastelandMarker.tsx",
+              "RelativeDocumentMoniker": "src\\Components\\MojaveWastelandMarker\\MojaveWastelandMarker.tsx",
+              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MojaveWastelandMarker\\MojaveWastelandMarker.tsx",
+              "RelativeToolTip": "src\\Components\\MojaveWastelandMarker\\MojaveWastelandMarker.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-25T22:05:58.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MarkerListItem.tsx",
+              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerListItem\\MarkerListItem.tsx",
+              "RelativeDocumentMoniker": "src\\Components\\MarkerListItem\\MarkerListItem.tsx",
+              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerListItem\\MarkerListItem.tsx",
+              "RelativeToolTip": "src\\Components\\MarkerListItem\\MarkerListItem.tsx",
+              "ViewState": "AQIAADgAAAAAAAAAAAAgwEwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-25T22:05:17.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MojaveWastelandMap.tsx",
+              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MojaveWastelandMap\\MojaveWastelandMap.tsx",
+              "RelativeDocumentMoniker": "src\\Components\\MojaveWastelandMap\\MojaveWastelandMap.tsx",
+              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MojaveWastelandMap\\MojaveWastelandMap.tsx",
+              "RelativeToolTip": "src\\Components\\MojaveWastelandMap\\MojaveWastelandMap.tsx",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwEwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2024-05-25T21:59:50.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "markers.json",
+              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Data\\markers.json",
+              "RelativeDocumentMoniker": "src\\Data\\markers.json",
+              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Data\\markers.json",
+              "RelativeToolTip": "src\\Data\\markers.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-25T21:47:11.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MarkerTypePanel.tsx",
               "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx",
               "RelativeDocumentMoniker": "src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx",
               "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx",
               "RelativeToolTip": "src\\Components\\MarkerTypePanel\\MarkerTypePanel.tsx",
-              "ViewState": "AQIAAHcAAAAAAAAAAADgv4sAAAAfAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIkAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2024-05-25T21:16:38.768Z",
               "EditorCaption": ""
@@ -85,38 +180,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SettingsPanel.tsx",
-              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\SettingsPanel\\SettingsPanel.tsx",
-              "RelativeDocumentMoniker": "src\\Components\\SettingsPanel\\SettingsPanel.tsx",
-              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\SettingsPanel\\SettingsPanel.tsx",
-              "RelativeToolTip": "src\\Components\\SettingsPanel\\SettingsPanel.tsx",
-              "ViewState": "AQIAAKQAAAAAAAAAAAAQwHMAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-25T21:11:27.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MarkerListItem.tsx",
-              "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerListItem\\MarkerListItem.tsx",
-              "RelativeDocumentMoniker": "src\\Components\\MarkerListItem\\MarkerListItem.tsx",
-              "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\Components\\MarkerListItem\\MarkerListItem.tsx",
-              "RelativeToolTip": "src\\Components\\MarkerListItem\\MarkerListItem.tsx",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-25T21:11:00.428Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "types.ts",
               "DocumentMoniker": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\types.ts",
               "RelativeDocumentMoniker": "src\\types.ts",
               "ToolTip": "C:\\Users\\Aliba\\Desktop\\fallout-new-vegas-interactive-map\\src\\types.ts",
               "RelativeToolTip": "src\\types.ts",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAQwDIAAAACAAAA",
+              "ViewState": "AQIAADUAAAAAAAAAAAAQwBgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2024-05-25T20:51:19.422Z",
               "EditorCaption": ""

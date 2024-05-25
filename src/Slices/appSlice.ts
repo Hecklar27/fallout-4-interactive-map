@@ -60,9 +60,11 @@ interface StateSelector {
     app: AppStateInterface;
 }
 
+{/* MARKERINIT */}
 export const selectMarkers          = (state: StateSelector): AppStateInterface['markers'] => state.app.markers;
 export const selectSkillBookMarkers = (state: StateSelector): AppStateInterface['markers'] => state.app.markers.filter((marker: MarkerInterface) => marker.type === typeMap.SkillBook);
 export const selectSnowGlobeMarkers = (state: StateSelector): AppStateInterface['markers'] => state.app.markers.filter((marker: MarkerInterface) => marker.type === typeMap.SnowGlobe);
+export const selectBobbleHeadMarkers = (state: StateSelector): AppStateInterface['markers'] => state.app.markers.filter((marker: MarkerInterface) => marker.type === typeMap.BobbleHead);
 
 export const selectIsFoundMarkersShown = (state: StateSelector): AppStateInterface['isFoundMarkersShown'] => state.app.isFoundMarkersShown;
 
