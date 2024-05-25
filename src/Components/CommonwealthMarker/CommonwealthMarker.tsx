@@ -1,7 +1,7 @@
 import * as React from 'react';
 import ReactDomServer from 'react-dom/server';
 import classNames from 'classnames';
-import './MojaveWastelandMarker.scss';
+import './CommonwealthMarker.scss';
 import {
     Marker,
     Popup,
@@ -31,13 +31,13 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
-export interface MojaveWastelandMarkerProps extends MarkerInterface {
+export interface CommonwealthMarkerProps extends MarkerInterface {
     // className?: string;
     onMarkButtonClick?: React.DOMAttributes<Element>['onClick'];
     onAdd?: L.LeafletEventHandlerFn;
 }
 
-const MojaveWastelandMarker = ({
+const CommonwealthMarker = ({
     // className = '',
     isFound = false,
     url = '',
@@ -50,7 +50,7 @@ const MojaveWastelandMarker = ({
     type,
     subType,
     onAdd = undefined,
-}: MojaveWastelandMarkerProps): JSX.Element => {
+}: CommonwealthMarkerProps): JSX.Element => {
 
     const iconSizeX = 25.5;
     const iconSizeY = 34; // update this value first, then check width for setting X.
@@ -63,15 +63,19 @@ const MojaveWastelandMarker = ({
                 fontSize: iconSizeY,
             }}
             className={classNames([
-                'mojave-wasteland-marker__icon',
+                'commonwealth-marker__icon',
             ])}
         >
-            <FontAwesomeIcon icon={faMapMarkerAlt} />
+
+            <FontAwesomeIcon
+                icon={faMapMarkerAlt}
+            />
+
         </Box>
     );
 
     const icon = L.divIcon({
-        className: 'mojave-wasteland-marker__icon-wrapper',
+        className: 'commonwealth-marker__icon-wrapper',
         html: ReactDomServer.renderToStaticMarkup(MarkerIcon),
         iconSize: [
             iconSizeX,
@@ -88,19 +92,44 @@ const MojaveWastelandMarker = ({
     });
 
     return (
+
         <Marker
+            // className={classNames([
+            //     'commonwealth-marker',
+            //     className,
+            // ])}
             position={[lat, lng]}
             opacity={isFound ? 0.5 : 1}
             icon={icon}
-            eventHandlers={{ add: onAdd }}
+            eventHandlers={{
+                add: onAdd,
+            }}
         >
+
             <Popup>
-                <Box fontFamily="body">
-                    <Heading as="h3" size="lg" marginBottom="4">
-                        <Link href={url} isExternal={true}>
+
+                <Box
+                    // override leaflets font declaration
+                    fontFamily="body"
+                >
+
+                    <Heading
+                        as="h3"
+                        size="lg"
+                        marginBottom="4"
+                    >
+
+                        <Link
+                            href={url}
+                            isExternal={true}
+                        >
+
                             {type === typeMap.SkillBook && subType && subTypeSkillBookLabelMap[subType] && `${subTypeSkillBookLabelMap[subType]} - `}
+
                             {title}
+
                         </Link>
+
                     </Heading>
 
                     <Badge
@@ -112,31 +141,50 @@ const MojaveWastelandMarker = ({
                     </Badge>
 
                     {desc && (
+
                         <Text
-                            className={classNames('mojave-wasteland-marker__desc')}
-                            dangerouslySetInnerHTML={{
+                            className={classNames('commonwealth-marker__desc')}
+                            dangerouslySetInnerHTML={{ // eslint-disable-line react/no-danger
                                 __html: DOMPurify.sanitize(desc),
                             }}
                         />
+
                     )}
 
                     {imgSrc && (
-                        <Image src={imgSrc} alt={title} marginBottom="4" />
+
+                        <Image
+                            src={imgSrc}
+                            alt={title}
+                            marginBottom="4"
+                        />
+
                     )}
 
                     <Button
                         onClick={onMarkButtonClick}
                         width="100%"
                         variant="outline"
-                        leftIcon={<Checkbox isChecked={isFound} />}
+                        leftIcon={(
+                            <Checkbox
+                                isChecked={isFound}
+                            />
+                        )}
                         colorScheme="blue"
                     >
+
                         Mark As Found
+
                     </Button>
+
                 </Box>
+
             </Popup>
+
         </Marker>
+
     );
+
 };
 
-export default React.memo(MojaveWastelandMarker);
+export default React.memo(CommonwealthMarker);

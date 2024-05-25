@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.scss';
-import MojaveWastelandMap from 'Components/MojaveWastelandMap/MojaveWastelandMap';
+import CommonwealthMap from 'Components/CommonwealthMap/CommonwealthMap';
 import SettingsPanel from 'Components/SettingsPanel/SettingsPanel';
 import packageJson from './../../../package.json';
 import type {
@@ -172,8 +172,8 @@ const App = (): JSX.Element => {
 
             </Drawer>
 
-            <MojaveWastelandMap
-                className="app__mojave-wasteland-map"
+            <CommonwealthMap
+                className="app__commonwealth-map"
                 onMarkerAdd={handleMarkerAdd}
             />
 

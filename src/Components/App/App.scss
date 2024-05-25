@@ -4,6 +4,7 @@
 
     &__settings-panel {
         @media (min-width: 1024px) {
+            //Changes Sidebar width
             max-width: 500px;
         }
     }
@@ -14,7 +15,9 @@
         bottom: 0;
         left: 0;
         padding: 1rem;
+        //Changes the centering of the settings tab in phone mode?
         width: 100%;
+        //Allows flexibility to the centering of settings tab in phone mode
         display: flex;
         justify-content: center;
     }
@@ -24,7 +27,8 @@
         max-width: 500px;
     }
 
-    &__mojave-wasteland-map {
+    &__commonwealth-map {
+        //For some sidebar to the right. Keep at 100% to hide it
         width: 100%;
     }
 }

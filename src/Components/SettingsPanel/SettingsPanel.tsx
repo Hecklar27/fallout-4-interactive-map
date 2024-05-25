@@ -1,7 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import './SettingsPanel.scss';
-import FalloutNVLogoImageSrc from './fallout-nv-logo.png';
+import Fallout4LogoImageSrc from './fallout-4-logo.png';
 import MarkerTypePanel from 'Components/MarkerTypePanel/MarkerTypePanel';
 import type { MarkerTypePanelProps } from 'Components/MarkerTypePanel/MarkerTypePanel';
 import {
@@ -23,12 +23,10 @@ import {
 } from '@chakra-ui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-regular-svg-icons';
-{/* MARKERINIT */ }
 import {
     selectIsFoundMarkersShown,
     selectSkillBookMarkers,
     selectSnowGlobeMarkers,
-    selectBobbleHeadMarkers,
     toggleShowFoundMarkers,
     filterMarkerType,
     showAllMarkers,
@@ -59,10 +57,10 @@ const SettingsPanel = ({
 }: SettingsPanelProps): JSX.Element => {
 
     const isFoundMarkersShown = useAppSelector(selectIsFoundMarkersShown);
-    {/* MARKERINIT */ }
+
     const skillBookMarkers = useAppSelector(selectSkillBookMarkers);
     const snowGlobeMarkers = useAppSelector(selectSnowGlobeMarkers);
-    const bobbleHeadMarkers = useAppSelector(selectBobbleHeadMarkers);
+
     const dispatch = useAppDispatch();
 
     const handleShowAllClick = (event: React.MouseEvent): void => {
@@ -106,8 +104,8 @@ const SettingsPanel = ({
                 >
 
                     <Image
-                        src={FalloutNVLogoImageSrc}
-                        alt="Fallout: New Vegas Logo"
+                        src={Fallout4LogoImageSrc}
+                        alt="Fallout 4 Logo"
                     />
 
                 </figure>
@@ -122,7 +120,7 @@ const SettingsPanel = ({
                     direction={isLargeScreen ? 'row' : 'column'}
                     align="center"
                     justify="center"
-                    spacing="4"
+                    spacing="2"
                 >
 
                     <Tooltip
@@ -152,7 +150,7 @@ const SettingsPanel = ({
                     >
 
                         <Tooltip
-                            label="If checked, markers 'marked as found' will still appear on the map."
+                            label="If checked, markers 'marked as found' will still appear transparent on the map."
                             placement="top"
                             hasArrow={true}
                         >
@@ -166,10 +164,12 @@ const SettingsPanel = ({
                 </Stack>
 
             </header>
+
             <div
                 className={classNames('settings-panel__content')}
             >
-                {/* MARKERINIT */}
+
+                {/* TODO: iterate over typeMap values*/}
                 <MarkerTypePanel
                     className="settings-panel__marker-type-panel"
                     type={typeMap.SkillBook}
@@ -185,14 +185,6 @@ const SettingsPanel = ({
                     markers={snowGlobeMarkers}
                     onMarkButtonClick={handleMarkButtonClick}
                     onTypeClick={handleTypeClick(typeMap.SnowGlobe)}
-                    onMarkerTitleClick={onMarkerTitleClick}
-                />
-                <MarkerTypePanel
-                    className="settings-panel__marker-type-panel"
-                    type={typeMap.BobbleHead}
-                    markers={bobbleHeadMarkers}
-                    onMarkButtonClick={handleMarkButtonClick}
-                    onTypeClick={handleTypeClick(typeMap.BobbleHead)}
                     onMarkerTitleClick={onMarkerTitleClick}
                 />
 

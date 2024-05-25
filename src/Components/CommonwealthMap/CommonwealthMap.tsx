@@ -1,14 +1,14 @@
 import * as React from 'react';
 import classNames from 'classnames';
-import './MojaveWastelandMap.scss';
+import './CommonwealthMap.scss';
 import {
     MapContainer,
     ImageOverlay,
 } from 'react-leaflet';
 import * as L from 'leaflet';
-import mojaveWastelandMapImageSrc from './mojave-wasteland-map.jpg';
-import MojaveWastelandMarker from 'Components/MojaveWastelandMarker/MojaveWastelandMarker';
-import type { MojaveWastelandMarkerProps } from 'Components/MojaveWastelandMarker/MojaveWastelandMarker';
+import commonwealthMapImageSrc from './the-commonwealth-map.jpg';
+import CommonwealthMarker from 'Components/CommonwealthMarker/CommonwealthMarker';
+import type { CommonwealthMarkerProps } from 'Components/CommonwealthMarker/CommonwealthMarker';
 import type {
     MarkerInterface,
 } from 'types';
@@ -27,19 +27,19 @@ const bounds = new L.LatLngBounds({
     lng: 0,
 }, {
     // for now, this is just the size of the map image.
-    lat: 1024,
-    lng: 1024
+    lat: 2048,
+    lng: 2048
 });
 
-export interface MojaveWastelandMapProps {
+export interface CommonwealthMapProps {
     className?: string;
-    onMarkerAdd?: (marker: MarkerInterface) => MojaveWastelandMarkerProps['onAdd'];
+    onMarkerAdd?: (marker: MarkerInterface) => CommonwealthMarkerProps['onAdd'];
 }
 
-const MojaveWastelandMap = ({
+const CommonwealthMap = ({
     className = '',
     onMarkerAdd = undefined,
-}: MojaveWastelandMapProps): JSX.Element => {
+}: CommonwealthMapProps): JSX.Element => {
 
     const isFoundMarkersShown = useAppSelector(selectIsFoundMarkersShown);
 
@@ -55,7 +55,7 @@ const MojaveWastelandMap = ({
 
         <MapContainer
             className={classNames([
-                'mojave-wasteland-map',
+                'commonwealth-map',
                 className,
             ])}
             maxZoom={4}
@@ -64,7 +64,7 @@ const MojaveWastelandMap = ({
         >
 
             <ImageOverlay
-                url={mojaveWastelandMapImageSrc}
+                url={commonwealthMapImageSrc}
                 bounds={bounds}
             />
 
@@ -89,7 +89,7 @@ const MojaveWastelandMap = ({
 
                 return (
 
-                    <MojaveWastelandMarker
+                    <CommonwealthMarker
                         key={marker.id}
                         lat={marker.lat}
                         lng={marker.lng}
@@ -114,4 +114,4 @@ const MojaveWastelandMap = ({
 
 };
 
-export default MojaveWastelandMap;
+export default CommonwealthMap;
